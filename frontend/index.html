@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangam - Modern Indian Music Hub</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <!-- Enhanced Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top enhanced-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold logo" href="#" onclick="showPage('home')">
+            <i class="fas fa-music me-2"></i>Sangam
+        </a>
+        <button class="navbar-toggler mobile-menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-links">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('home')"><i class="fas fa-home me-1"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('howto')"><i class="fas fa-question-circle me-1"></i> How to Use</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('features')"><i class="fas fa-star me-1"></i> Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link highlight" href="#" onclick="showPage('music')"><i class="fas fa-play me-1"></i> Start Listening</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="hero-section">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <div class="hero-content">
+                            <h1 class="hero-title floating">🎵 Sangam</h1>
+                            <p class="hero-subtitle">Your Gateway to Indian Music</p>
+                            <p class="hero-description">Discover, Search, and Stream your favorite Indian songs with mood-based recommendations powered by YouTube and Spotify APIs</p>
+                            <button class="btn btn-primary btn-lg cta-button" onclick="showPage('music')">
+                                <i class="fas fa-play me-2"></i>Start Listening
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- How to Use Page -->
+<div id="howto" class="page">
+    <div class="container">
+        <div class="content-section">
+            <h2 class="section-title text-center mb-5">📖 Complete User Guide - How to Use Sangam Music</h2>
+            
+            <!-- Quick Start for Beginners -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="feature-card text-center p-4">
+                        <h4 class="mb-3">🚀 New User? Start Here</h4>
+                        <p class="mb-0">No registration required, no login needed - just enjoy the music!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step by Step Video Guide -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="feature-card">
+                        <h4 class="text-center mb-4">🎥 Video Tutorial (Step-by-Step)</h4>
+                        <div class="text-center">
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle" style="font-size: 4rem; color: var(--primary-color);"></i>
+                                <p class="mt-3">Coming Soon: Complete Video Guide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Usage Steps -->
+            <div class="row g-4">
+                <!-- Step 1: Navigation -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">1️⃣</div>
+                        <h5>Navigate the Website</h5>
+                        <p>Move between different sections using the top menu</p>
+                        <div class="step-details">
+                            <div class="navigation-guide">
+                                <div class="nav-item">
+                                    <i class="fas fa-home text-primary"></i>
+                                    <span>Home - Main page</span>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="fas fa-play text-success"></i>
+                                    <span>Start Listening - Music section</span>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span>Features - Website features</span>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="fas fa-question-circle text-info"></i>
+                                    <span>How to Use - This page</span>
+                                </div>
+                            </div>
+                            <div class="tip-box">
+                                <strong>Tip:</strong> The most important button is "Start Listening" - click here to begin listening to music
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Mood Selection -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">2️⃣</div>
+                        <h5>Choose Your Mood</h5>
+                        <p>Listen to songs according to your current mood</p>
+                        <div class="step-details">
+                            <h6>Available Moods:</h6>
+                            <div class="mood-tags">
+                                <span class="mood-tag">😊 Happy</span>
+                                <span class="mood-tag">😢 Sad</span>
+                                <span class="mood-tag">❤️ Romantic</span>
+                                <span class="mood-tag">💪 Motivation</span>
+                                <span class="mood-tag">🎉 Party</span>
+                                <span class="mood-tag">😎 Chill</span>
+                                <span class="mood-tag">🙏 Devotional</span>
+                                <span class="mood-tag">🎼 Classical</span>
+                            </div>
+                            <div class="usage-steps">
+                                <div class="usage-step">
+                                    <span class="step-number">1</span>
+                                    <span>Go to "Start Listening" page</span>
+                                </div>
+                                <div class="usage-step">
+                                    <span class="step-number">2</span>
+                                    <span>Click on your mood emoji</span>
+                                </div>
+                                <div class="usage-step">
+                                    <span class="step-number">3</span>
+                                    <span>Songs will automatically load</span>
+                                </div>
+                            </div>
+                            <div class="tip-box">
+                                <strong>Quick Access:</strong> Press numbers 1-8 on keyboard for quick mood selection
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Artist Search -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">3️⃣</div>
+                        <h5>Search for Artists</h5>
+                        <p>Find songs by your favorite singer</p>
+                        <div class="step-details">
+                            <h6>Use Search Box:</h6>
+                            <div class="search-demo">
+                                <div class="search-input-demo">
+                                    <i class="fas fa-search"></i>
+                                    <span>Enter artist name...</span>
+                                </div>
+                            </div>
+                            <div class="usage-steps">
+                                <div class="usage-step">
+                                    <span class="step-number">1</span>
+                                    <span>Click in search box</span>
+                                </div>
+                                <div class="usage-step">
+                                    <span class="step-number">2</span>
+                                    <span>Type artist name (like Arijit Singh)</span>
+                                </div>
+                                <div class="usage-step">
+                                    <span class="step-number">3</span>
+                                    <span>Press Enter or click search button</span>
+                                </div>
+                            </div>
+                            <div class="popular-artists">
+                                <strong>Popular Artists:</strong>
+                                <div class="artist-tags">
+                                    <span class="artist-tag">Arijit Singh</span>
+                                    <span class="artist-tag">Shreya Ghoshal</span>
+                                    <span class="artist-tag">A.R. Rahman</span>
+                                    <span class="artist-tag">Kishore Kumar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Play Songs -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">4️⃣</div>
+                        <h5>Play Music</h5>
+                        <p>Different ways to play songs</p>
+                        <div class="step-details">
+                            <h6>Playback Options:</h6>
+                            <div class="playback-options">
+                                <div class="playback-option">
+                                    <i class="fab fa-youtube text-danger"></i>
+                                    <div>
+                                        <strong>YouTube Play</strong>
+                                        <small>Full video in browser</small>
+                                    </div>
+                                </div>
+                                <div class="playback-option">
+                                    <i class="fab fa-spotify text-success"></i>
+                                    <div>
+                                        <strong>Spotify Preview</strong>
+                                        <small>30-second audio preview</small>
+                                    </div>
+                                </div>
+                                <div class="playback-option">
+                                    <i class="fas fa-external-link-alt text-primary"></i>
+                                    <div>
+                                        <strong>External App</strong>
+                                        <small>Open in YouTube/Spotify app</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="usage-steps">
+                                <div class="usage-step">
+                                    <span class="step-number">1</span>
+                                    <span>Click <i class="fas fa-play"></i> button next to song</span>
+                                </div>
+                                <div class="usage-step">
+                                    <span class="step-number">2</span>
+                                    <span>Choose playback option</span>
+                                </div>
+                                <div class="usage-step">
+                                    <span class="step-number">3</span>
+                                    <span>Enjoy the music!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 5: Player Controls -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">5️⃣</div>
+                        <h5>Player Controls</h5>
+                        <p>All ways to control music</p>
+                        <div class="step-details">
+                            <h6>Available Controls:</h6>
+                            <div class="control-guide">
+                                <div class="control-item">
+                                    <button class="btn-control demo-play">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <span>Play/Pause</span>
+                                </div>
+                                <div class="control-item">
+                                    <button class="btn-control demo-stop">
+                                        <i class="fas fa-stop"></i>
+                                    </button>
+                                    <span>Stop</span>
+                                </div>
+                                <div class="control-item">
+                                    <button class="btn-control demo-volume">
+                                        <i class="fas fa-volume-up"></i>
+                                    </button>
+                                    <span>Volume</span>
+                                </div>
+                                <div class="control-item">
+                                    <button class="btn-control demo-fullscreen">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <span>Fullscreen</span>
+                                </div>
+                            </div>
+                            <div class="keyboard-shortcuts">
+                                <h6>Keyboard Shortcuts:</h6>
+                                <div class="shortcut-list">
+                                    <div class="shortcut-item">
+                                        <kbd>Space</kbd>
+                                        <span>Play/Pause</span>
+                                    </div>
+                                    <div class="shortcut-item">
+                                        <kbd>Esc</kbd>
+                                        <span>Close Player</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 6: Advanced Features -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">6️⃣</div>
+                        <h5>Advanced Features</h5>
+                        <p>Extra features that improve experience</p>
+                        <div class="step-details">
+                            <h6>Special Features:</h6>
+                            <div class="advanced-features">
+                                <div class="adv-feature">
+                                    <i class="fas fa-bolt text-warning"></i>
+                                    <span>Instant Search - Immediate results</span>
+                                </div>
+                                <div class="adv-feature">
+                                    <i class="fas fa-mobile-alt text-info"></i>
+                                    <span>Mobile Friendly - Works on every device</span>
+                                </div>
+                                <div class="adv-feature">
+                                    <i class="fas fa-shield-alt text-success"></i>
+                                    <span>No Ads - Without advertisements</span>
+                                </div>
+                                <div class="adv-feature">
+                                    <i class="fas fa-sync text-primary"></i>
+                                    <span>Real-time Updates - Live data</span>
+                                </div>
+                            </div>
+                            <div class="tip-box">
+                                <strong>Pro Tip:</strong> If video doesn't play, use "Open YouTube" button - it always works
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Use Cases -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="feature-card">
+                        <h4 class="text-center mb-4">🎯 Common Usage Scenarios</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="scenario-card">
+                                    <h6>🎵 Music for Party</h6>
+                                    <ol>
+                                        <li>Go to "Start Listening"</li>
+                                        <li>Select 🎉 Party mood</li>
+                                        <li>Play high-energy songs</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="scenario-card">
+                                    <h6>😴 For Relaxation</h6>
+                                    <ol>
+                                        <li>Choose 😎 Chill mood</li>
+                                        <li>Select soft songs</li>
+                                        <li>Adjust volume</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="scenario-card">
+                                    <h6>🎤 Songs by Specific Artist</h6>
+                                    <ol>
+                                        <li>Use search box</li>
+                                        <li>Type artist name</li>
+                                        <li>Browse all songs</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troubleshooting Section -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="feature-card">
+                        <h4 class="text-center mb-4">🔧 Common Problems & Solutions</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="problem-solution">
+                                    <h6>❌ Video Not Playing?</h6>
+                                    <p><strong>Solution:</strong> Use "Open YouTube" button - it always works</p>
+                                </div>
+                                <div class="problem-solution">
+                                    <h6>❌ No Search Results?</h6>
+                                    <p><strong>Solution:</strong> Check internet connection, or try different artist name</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="problem-solution">
+                                    <h6>❌ Website is Slow?</h6>
+                                    <p><strong>Solution:</strong> Refresh browser, or try different browser</p>
+                                </div>
+                                <div class="problem-solution">
+                                    <h6>❌ No Sound?</h6>
+                                    <p><strong>Solution:</strong> Check device volume, or press "Enable Sound" button</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="feature-card">
+                        <h4 class="text-center mb-4">❓ Frequently Asked Questions</h4>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <h6>Q: Do I need to create an account?</h6>
+                                <p>A: No! No registration, no login. Use directly.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h6>Q: Will it work on mobile?</h6>
+                                <p>A: Yes! Works perfectly on every device - mobile, tablet, computer all.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h6>Q: Can we download music?</h6>
+                                <p>A: No, only online streaming is available.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h6>Q: Is this free?</h6>
+                                <p>A: Yes! 100% free, no charges.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Start Checklist -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="feature-card">
+                        <h4 class="text-center mb-4">✅ Quick Start Checklist</h4>
+                        <div class="checklist">
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Open website</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Click "Start Listening"</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Select mood or search artist</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Click play button</span>
+                            </div>
+                            <div class="checklist-item">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Enjoy the music!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Features Page -->
+    <!-- Features Page -->
+<div id="features" class="page">
+    <div class="container">
+        <div class="content-section">
+            <h2 class="section-title text-center mb-5">✨ Advanced Features</h2>
+            
+            <!-- Feature Categories -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="feature-card text-center p-4">
+                        <h4 class="mb-3">🎵 Complete Music Experience</h4>
+                        <p class="mb-0">Sangam combines the best of YouTube and Spotify to deliver a seamless Indian music streaming experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Enhanced Feature Cards -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">🎭</div>
+                        <h5>Smart Mood Detection</h5>
+                        <p>Advanced AI-powered mood recognition with 8 emotional categories and real-time song matching from live APIs.</p>
+                        <div class="feature-tags">
+                            <span class="tag">AI-Powered</span>
+                            <span class="tag">Real-time</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">🔍</div>
+                        <h5>Intelligent Artist Search</h5>
+                        <p>Search 10,000+ Indian artists with instant results from YouTube Data API and Spotify Web API integration.</p>
+                        <div class="feature-tags">
+                            <span class="tag">10K+ Artists</span>
+                            <span class="tag">Live Data</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">🔗</div>
+                        <h5>Multi-Platform Sync</h5>
+                        <p>Seamless integration with YouTube Data API v3 and Spotify Web API for comprehensive music access and playback.</p>
+                        <div class="feature-tags">
+                            <span class="tag">Dual APIs</span>
+                            <span class="tag">Sync</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">📱</div>
+                        <h5>Universal Player</h5>
+                        <p>Built-in audio player for Spotify previews, embedded YouTube player, and external app integration with full controls.</p>
+                        <div class="feature-tags">
+                            <span class="tag">Multi-Format</span>
+                            <span class="tag">Controls</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">🎵</div>
+                        <h5>Real-Time Streaming</h5>
+                        <p>Direct streaming with YouTube embeds, Spotify previews, and external app integration with instant playback.</p>
+                        <div class="feature-tags">
+                            <span class="tag">Instant Play</span>
+                            <span class="tag">No Delay</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">🎨</div>
+                        <h5>Modern UI Experience</h5>
+                        <p>Glass morphism design with play/pause controls, song information, and seamless playback management.</p>
+                        <div class="feature-tags">
+                            <span class="tag">Glass UI</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Feature Cards -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">⚡</div>
+                        <h5>Lightning Fast</h5>
+                        <p>Optimized backend with caching and efficient API calls for instant search results and smooth playback.</p>
+                        <div class="feature-tags">
+                            <span class="tag">Fast</span>
+                            <span class="tag">Optimized</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">🌐</div>
+                        <h5>Cross-Platform</h5>
+                        <p>Works perfectly on desktop, tablet, and mobile devices with responsive design and touch-friendly controls.</p>
+                        <div class="feature-tags">
+                            <span class="tag">Responsive</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">🔒</div>
+                        <h5>Privacy Focused</h5>
+                        <p>No data collection, no tracking. Your searches and preferences stay private on your device.</p>
+                        <div class="feature-tags">
+                            <span class="tag">Secure</span>
+                            <span class="tag">Private</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Specifications -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="feature-card">
+                        <h4 class="text-center mb-4">🛠 Technical Specifications</h4>
+                        <div class="row text-center">
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="spec-item">
+                                    <div class="spec-value">2</div>
+                                    <div class="spec-label">Music APIs</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="spec-item">
+                                    <div class="spec-value">8</div>
+                                    <div class="spec-label">Mood Categories</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="spec-item">
+                                    <div class="spec-value">10K+</div>
+                                    <div class="spec-label">Artists</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="spec-item">
+                                    <div class="spec-value">∞</div>
+                                    <div class="spec-label">Songs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- API Integration Info -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="feature-card h-100">
+                        <h5><i class="fab fa-youtube text-danger me-2"></i>YouTube Integration</h5>
+                        <ul class="feature-list">
+                            <li>Full video playback with embedding</li>
+                            <li>High-quality thumbnails and metadata</li>
+                            <li>Direct YouTube links</li>
+                            <li>Category-based search (Music only)</li>
+                            <li>Region-specific content (India focus)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card h-100">
+                        <h5><i class="fab fa-spotify text-success me-2"></i>Spotify Integration</h5>
+                        <ul class="feature-list">
+                            <li>30-second song previews</li>
+                            <li>Album art and metadata</li>
+                            <li>Direct Spotify app integration</li>
+                            <li>Genre-based filtering</li>
+                            <li>High-quality audio streaming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Music Page -->
+    <div id="music" class="page">
+        <div class="container">
+            <div class="content-section">
+                <!-- Search Section -->
+                <div class="search-section mb-5">
+                    <h3 class="text-center mb-4">🔍 Search Indian Artists</h3>
+                    <div class="search-container">
+                        <input type="text" id="artistSearch" class="search-input" placeholder="Enter artist name (e.g., Arijit Singh, Shreya Ghoshal)">
+                        <button class="search-btn" onclick="searchArtist()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="text-center mt-3">
+                        <small class="text-light opacity-75">
+                            <i class="fas fa-info-circle me-1"></i>
+                            With API keys: Live songs from YouTube & Spotify | Without: Demo mode
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Mood Section -->
+                <div class="mood-section mb-5">
+                    <h3 class="text-center mb-4">🎭 Choose Your Mood</h3>
+                    <div class="mood-grid">
+                        <div class="mood-card" onclick="playMoodSongs('happy')">
+                            <div class="mood-emoji">😊</div>
+                            <p>Happy</p>
+                        </div>
+                        <div class="mood-card" onclick="playMoodSongs('sad')">
+                            <div class="mood-emoji">😢</div>
+                            <p>Sad</p>
+                        </div>
+                        <div class="mood-card" onclick="playMoodSongs('romantic')">
+                            <div class="mood-emoji">❤️</div>
+                            <p>Romantic</p>
+                        </div>
+                        <div class="mood-card" onclick="playMoodSongs('motivation')">
+                            <div class="mood-emoji">💪</div>
+                            <p>Motivation</p>
+                        </div>
+                        <div class="mood-card" onclick="playMoodSongs('party')">
+                            <div class="mood-emoji">🎉</div>
+                            <p>Party</p>
+                        </div>
+                        <div class="mood-card" onclick="playMoodSongs('chill')">
+                            <div class="mood-emoji">😎</div>
+                            <p>Chill</p>
+                        </div>
+                        <div class="mood-card" onclick="playMoodSongs('devotional')">
+                            <div class="mood-emoji">🙏</div>
+                            <p>Devotional</p>
+                        </div>
+                        <div class="mood-card" onclick="playMoodSongs('classical')">
+                            <div class="mood-emoji">🎼</div>
+                            <p>Classical</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <small class="text-light opacity-75">
+                            <i class="fas fa-keyboard me-1"></i>
+                            Quick access: Press 1-8 for mood selection
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Loading Indicator -->
+                <div id="loadingIndicator" class="loading-container" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <p>Loading songs...</p>
+                </div>
+
+                <!-- Songs Display -->
+                <div id="songsContainer"></div>
+
+                <!-- Current Playing Status -->
+                <div id="currentPlayingStatus" class="fixed-bottom" style="display: none;">
+                    <div class="container">
+                        <div class="feature-card p-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-music me-2 pulse text-primary"></i>
+                                    <div>
+                                        <small id="statusTitle" class="fw-bold">Playing...</small><br>
+                                        <small id="statusArtist" class="opacity-75">Artist</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-light me-2" onclick="togglePlayPause()">
+                                        <i id="playPauseIcon" class="fas fa-pause"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-light" onclick="stopAllPlayback()">
+                                        <i class="fas fa-stop"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Enhanced Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sangam Music Player</h3>
+                <p>Enjoy and manage your favorite tracks with Sangam. Simple, powerful, and elegant music hub.</p>
+                
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <a href="https://www.instagram.com/sahaniabhisek311?igsh=MW1nNmE1MGpkdnY3ZA=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1A39yLUvhp/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-sahani-447851341"><i class="fab fa-linkedin"></i></a>
+                    
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#" onclick="showPage('home')">Home</a>
+                <a href="#" onclick="showPage('music')">Music</a>
+                <a href="#" onclick="showPage('features')">Features</a>
+                <a href="#" onclick="showPage('howto')">How to Use</a>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> abhishek242443@gmail.com</p>
+                
+                <p><i class="fas fa-map-marker-alt"></i> India</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; Sangam Music Player by Abhishek Sahani. All rights reserved. Made with ❤️ for music lovers.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Navbar scroll effect
+    const navbar = document.querySelector('.enhanced-navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
