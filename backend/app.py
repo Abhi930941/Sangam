@@ -1,4 +1,3 @@
-# backend/app.py
 from flask import Flask, jsonify, request, send_from_directory, abort
 from flask_cors import CORS
 import requests
@@ -8,7 +7,7 @@ import logging
 import time
 import base64
 
-# Load environment variables from .env if present
+# Load environment variables from .env 
 load_dotenv()
 
 # Initialize Flask app
@@ -24,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 # Configuration
 class Config:
-    # API Keys (set these in your .env file)
+    # API Keys 
     YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
     SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
     SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
@@ -44,7 +43,7 @@ class Config:
 config = Config()
 
 # -------------------------
-# Enhanced Music API Service
+# Music API Service
 # -------------------------
 class MusicAPIService:
     def __init__(self):
@@ -123,7 +122,7 @@ class MusicAPIService:
                     "maxResults": max_results,
                     "type": "video",
                     "regionCode": "IN",
-                    "videoCategoryId": "10",  # Music category
+                    "videoCategoryId": "10",  
                 },
                 timeout=12,
             )
@@ -165,7 +164,7 @@ class MusicAPIService:
                 duration_iso = content_details.get("duration", "PT4M20S")
                 duration = self.parse_youtube_duration(duration_iso)
                 
-                # Get best thumbnail
+                # Getting best thumbnail
                 thumbnails = snippet.get("thumbnails", {})
                 thumbnail_url = (
                     thumbnails.get("maxres", {}).get("url") or
@@ -235,11 +234,11 @@ class MusicAPIService:
             songs = []
             
             for track in tracks:
-                # Get best thumbnail
+                # Getting best thumbnail
                 images = track.get("album", {}).get("images", [])
                 thumbnail_url = images[0]["url"] if images else None
                 
-                # Get artist names
+                # Getting artist names
                 artists = [artist.get("name") for artist in track.get("artists", [])]
                 
                 songs.append({
@@ -321,7 +320,7 @@ def api_search(artist):
 
     all_songs = []
     
-    # Try YouTube first (better for Indian music)
+    # Try YouTube first 
     youtube_songs = music_service.search_youtube_songs(artist, limit)
     all_songs.extend(youtube_songs)
     
@@ -351,7 +350,7 @@ def api_search(artist):
 
 @app.route("/api/mood/<mood>", methods=["GET"])
 def api_mood(mood):
-    # Enhanced mood mapping with Indian artists
+    # mood mapping with Indian artists
     mood_queries = {
         "happy": "bollywood happy songs dance",
         "sad": "bollywood sad songs emotional arijit singh",
@@ -451,7 +450,7 @@ def api_mood(mood):
         }
         
         songs = mood_fallback.get(mood.lower(), mood_fallback["happy"])
-        # Add sample data format
+        # sample data format
         for song in songs:
             song.update({
                 "source": "sample",
@@ -497,9 +496,9 @@ def api_play(song_id):
         logger.error("Play error: %s", e)
         return jsonify({"success": False, "error": str(e)}), 500
 
-# -------------------------
-# Run app
-# -------------------------
+# -----------------------------------------------------------------
+# Run my Sangam app
+# ------------------------------
 if __name__ == "__main__":
     logger.info("Starting Sangam backend...")
     logger.info(f"YouTube API: {'Available' if config.YOUTUBE_API_KEY else 'Not configured'}")

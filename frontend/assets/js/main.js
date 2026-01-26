@@ -1,5 +1,3 @@
-// assets/js/main.js - Complete File with Modern UI
-
 // Configuration
 const CONFIG = {
     API_BASE_URL: '/api',
@@ -27,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 });
 
-// API Health Check
+// API Health Checking
 async function checkAPIHealth() {
     try {
         const response = await fetch(`${CONFIG.API_BASE_URL}/health`, {
@@ -396,7 +394,7 @@ function displaySongs(songs, title) {
     
     container.innerHTML = html;
     
-    // Add player containers
+    // player containers
     if (!document.getElementById('audioPlayerContainer')) {
         container.innerHTML += `
             <!-- Audio Player Container -->
@@ -570,7 +568,7 @@ function showPlaybackOptions(songData) {
         `;
     }
     
-    // Demo/Search Options
+    // Demo or Search Options
     if (!youtube_id && !spotify_id && !preview_url) {
         optionsHtml += `
                 <!-- Demo Section -->
@@ -632,7 +630,7 @@ function showPlaybackOptions(songData) {
     showNotification('Playback Options', `Choose how to play "${title}"`, 'music');
 }
 
-// Direct YouTube Open (Always Works)
+// Direct YouTube Open ( this is Always Works)
 function directYouTubeOpen(videoId) {
     const url = `https://www.youtube.com/watch?v=${videoId}`;
     window.open(url, '_blank');
@@ -730,7 +728,7 @@ function showVideoThumbnail(videoId, title, artist) {
     `;
 }
 
-// Embed YouTube Video with better UI
+// YouTube Video with better UI
 function embedYouTubeVideo(videoId, title, artist, unmuted = false) {
     const playerEl = document.getElementById('embedPlayer');
     if (!playerEl) return;
@@ -909,7 +907,7 @@ function stopAllPlayback() {
     showNotification('Stopped', 'All playback stopped', 'info');
 }
 
-// Toggle Play/Pause
+// Toggle Play or Pause
 function togglePlayPause() {
     if (currentAudio) {
         if (currentAudio.paused) {
@@ -951,7 +949,7 @@ function showLoading(show) {
     }
 }
 
-// Enhanced Notification System
+// Notification System
 function showNotification(title, message, icon = 'info') {
     const iconMap = {
         'info': 'fas fa-info-circle text-info',
@@ -1040,7 +1038,7 @@ document.addEventListener('keydown', function(e) {
         notifications.forEach(notification => notification.remove());
     }
     
-    // Space for play/pause
+    // Space for play or pause
     if (e.key === ' ' && (currentAudio || currentPlayer)) {
         e.preventDefault();
         togglePlayPause();

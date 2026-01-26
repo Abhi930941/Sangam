@@ -10,7 +10,6 @@
 </head>
 <body>
     <!-- Navigation -->
-    <!-- Enhanced Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top enhanced-navbar">
     <div class="container">
         <a class="navbar-brand fw-bold logo" href="#" onclick="showPage('home')">
@@ -473,13 +472,10 @@
 </div>
 
     <!-- Features Page -->
-    <!-- Features Page -->
 <div id="features" class="page">
     <div class="container">
         <div class="content-section">
             <h2 class="section-title text-center mb-5">✨ Advanced Features</h2>
-            
-            <!-- Feature Categories -->
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="feature-card text-center p-4">
@@ -490,7 +486,6 @@
             </div>
 
             <div class="row g-4">
-                <!-- Enhanced Feature Cards -->
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-card text-center">
                         <div class="feature-icon">🎭</div>
@@ -563,7 +558,6 @@
                     </div>
                 </div>
 
-                <!-- New Feature Cards -->
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-card text-center">
                         <div class="feature-icon">⚡</div>
@@ -671,7 +665,6 @@
     <div id="music" class="page">
         <div class="container">
             <div class="content-section">
-                <!-- Search Section -->
                 <div class="search-section mb-5">
                     <h3 class="text-center mb-4">🔍 Search Indian Artists</h3>
                     <div class="search-container">
@@ -688,7 +681,6 @@
                     </div>
                 </div>
 
-                <!-- Mood Section -->
                 <div class="mood-section mb-5">
                     <h3 class="text-center mb-4">🎭 Choose Your Mood</h3>
                     <div class="mood-grid">
@@ -733,16 +725,13 @@
                     </div>
                 </div>
 
-                <!-- Loading Indicator -->
                 <div id="loadingIndicator" class="loading-container" style="display: none;">
                     <div class="loading-spinner"></div>
                     <p>Loading songs...</p>
                 </div>
 
-                <!-- Songs Display -->
                 <div id="songsContainer"></div>
 
-                <!-- Current Playing Status -->
                 <div id="currentPlayingStatus" class="fixed-bottom" style="display: none;">
                     <div class="container">
                         <div class="feature-card p-2">
@@ -771,23 +760,18 @@
     </div>
 
 
-    <!-- Enhanced Footer -->
+    <!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
+            
+            <!-- About -->
             <div class="footer-section">
                 <h3>Sangam Music Player</h3>
                 <p>Enjoy and manage your favorite tracks with Sangam. Simple, powerful, and elegant music hub.</p>
-                
-                <!-- Social Media Links -->
-                <div class="social-links">
-                    <a href="https://www.instagram.com/sahaniabhisek311?igsh=MW1nNmE1MGpkdnY3ZA=="><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/share/1A39yLUvhp/"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/abhishek-sahani-447851341"><i class="fab fa-linkedin"></i></a>
-                    
-                </div>
             </div>
             
+            <!-- Quick Links -->
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <a href="#" onclick="showPage('home')">Home</a>
@@ -796,22 +780,23 @@
                 <a href="#" onclick="showPage('howto')">How to Use</a>
             </div>
     
+            <!-- Contact -->
             <div class="footer-section">
                 <h3>Contact</h3>
-                <p><i class="fas fa-envelope"></i> abhishek242443@gmail.com</p>
-                
-                <p><i class="fas fa-map-marker-alt"></i> India</p>
+                <div class="social-links">                    
+                    <a href="https://www.linkedin.com/in/abhishek-sahani-447851341"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:abhishek242443@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>  
+                </div>
             </div>
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; Sangam Music Player by Abhishek Sahani. All rights reserved. Made with ❤️ for music lovers.</p>
+            <p>&copy; Sangam Music Player by Abhishek Sahani. All rights reserved. Made for music lovers.</p>
         </div>
     </div>
 </footer>
 
 <script>
-    // Navbar scroll effect
     const navbar = document.querySelector('.enhanced-navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -821,7 +806,6 @@
         }
     });
 </script>
-
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
