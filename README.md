@@ -77,7 +77,7 @@ Display to User
 
 ## Project Structure
 ```
-sangam-music-player/
+sangam-music-web/
 ├── frontend/
 ├        ├──index.html              # Main application interface
 ├        ├──assets/
