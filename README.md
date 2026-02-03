@@ -29,10 +29,6 @@ It intelligently curates Bollywood and regional music using **mood-based recomme
 - YouTube Data API v3
 - Spotify Web API
 
-**Tools:**
-- dotenv for environment management
-- Python logging for monitoring
-
 ---
 
 ## Key Features
