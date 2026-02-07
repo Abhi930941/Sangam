@@ -52,10 +52,10 @@ User Interface (HTML/CSS/JS)
 Flask Backend (Python)
          ↓
 API Integration Layer
-    ↙         ↘
-YouTube API   Spotify API
-    ↓             ↓
-JSON Response ← Merged
+    ↙               ↘
+YouTube API       Spotify API
+    ↓                ↓
+JSON Response   ←  Merged
          ↓
 Display to User
 ```
@@ -94,7 +94,7 @@ sangam-music-web/
 
 **Live Demo:** https://sangam-music.onrender.com
 
-**GitHub Repository:** [Add repo link]
+**GitHub Repository:** https://github.com/Abhi930941/Sangam
 
 
 
@@ -102,22 +102,11 @@ sangam-music-web/
 
 ## Why This Project Matters
 
-Sangam is built around a real and commonly experienced problem—Indian music discovery
-is fragmented across platforms, and users often struggle to find music that matches
-their mood rather than just an artist or playlist.
+angam addresses the problem of fragmented Indian music discovery by enabling mood-based search across Bollywood and regional songs.
 
-This project goes beyond basic music streaming by introducing **mood-based discovery**
-tailored specifically for Indian listeners, covering Bollywood and regional genres.
-By integrating YouTube and Spotify into a single interface, Sangam simplifies the
-user experience while preserving content diversity.
+By integrating YouTube and Spotify into a single platform, it provides a seamless and unified listening experience.
 
-From a technical standpoint, Sangam demonstrates end-to-end full-stack development,
-including secure OAuth authentication, third-party API integration, backend data
-aggregation, and efficient frontend rendering.
-
-Overall, this project reflects strong problem-solving ability, product-oriented thinking,
-and the capability to design and build a scalable, real-world web application.
-
+Technically, the project demonstrates full-stack development, secure OAuth authentication, API integration, backend data aggregation, and scalable web application design.
 
 ---
 
@@ -128,6 +117,8 @@ and the capability to design and build a scalable, real-world web application.
 **LinkedIn:** [linkedin.com/in/abhishek-sahani-447851341](https://www.linkedin.com/in/abhishek-sahani-447851341)
 
 **Email:** abhishek242443@gmail.com
+
+**Portfolio:** https://abhi930941.github.io/Portfolio/
 
 ---
 
