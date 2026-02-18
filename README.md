@@ -90,13 +90,25 @@ sangam-music-web/
 
 ---
 
-## Demo & Links
+## Demo & Screenshots
 
 **Live Demo:** https://sangam-music.onrender.com
 
 **GitHub Repository:** https://github.com/Abhi930941/Sangam
 
-
+**Screenshots:**
+<table>
+  <tr>
+    <td><img src="Screenshot 2026-02-18 234433.png" alt="Home Page" /></td>
+    <td><img src="Screenshot 2026-02-18 234624.png" alt="Music Page" /></td>
+    <td><img src="screenshot-1771440969809.png" alt="Music Preview Page" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Home Page</b></td>
+    <td align="center"><b>Music Page</b></td>
+    <td align="center"><b>Music Preview Page</b></td>
+  </tr>
+</table>
 
 ---
 
