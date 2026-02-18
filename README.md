@@ -114,7 +114,7 @@ sangam-music-web/
 
 ## Why This Project Matters
 
-angam addresses the problem of fragmented Indian music discovery by enabling mood-based search across Bollywood and regional songs.
+Sangam addresses the problem of fragmented Indian music discovery by enabling mood-based search across Bollywood and regional songs.
 
 By integrating YouTube and Spotify into a single platform, it provides a seamless and unified listening experience.
 
