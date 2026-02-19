@@ -99,9 +99,9 @@ sangam-music-web/
 **Screenshots:**
 <table>
   <tr>
-    <td><img src="Screenshot 2026-02-18 234433.png" alt="Home Page" /></td>
-    <td><img src="Screenshot 2026-02-18 234624.png" alt="Music Page" /></td>
-    <td><img src="screenshot-1771440969809.png" alt="Music Preview Page" /></td>
+    <td><img src="screenshots/Screenshot 2026-02-18 234433.png" alt="Home Page" /></td>
+    <td><img src="screenshots/Screenshot 2026-02-18 234614.png" alt="Music Page" /></td>
+    <td><img src="screenshots/Screenshot 2026-02-20 005624.png" alt="Music Preview Page" /></td>
   </tr>
   <tr>
     <td align="center"><b>Home Page</b></td>
